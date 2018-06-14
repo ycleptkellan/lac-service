@@ -1,0 +1,34 @@
+{
+  "name": "lac-sa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -p 443",
+    "dev": "micro-dev",
+    "deploy": "now --public -e NODE_ENV='production' && now alias",
+    "deploy:docker": "now --public --docker -e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycleptkellan/lac-sa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycleptkellan/lac-sa/issues"
+  },
+  "homepage": "https://github.com/ycleptkellan/lac-sa#readme",
+  "dependencies": {
+    "googleapis": "^23.0.0",
+    "micro": "^9.0.2",
+    "micro-compress": "^1.0.0",
+    "micro-sentry": "^1.2.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "micro-dev": "^1.4.0"
+  }
+}
